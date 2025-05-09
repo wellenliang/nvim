@@ -1,0 +1,19 @@
+{
+    "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+    "runtime": {
+        "version": "LuaJIT",
+        "path": [
+            "/usr/share/lua/?.lua",
+            "/usr/share/lua/?/init.lua",
+            "/usr/share/nvim/runtime/lua/?.lua"
+        ]
+    },
+    "diagnostics": {
+        "enable": true,
+        "globals": ["vim", "require",
+            "stds",
+            "current_tab"]
+    },
+    "workspace.library": ["/usr/share/nvim/runtime/lua"],
+    "workspace.checkThirdParty": "disable"
+}
